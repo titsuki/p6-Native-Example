@@ -1,6 +1,27 @@
 use v6;
+use NativeCall;
 unit class Native::Example;
 
+my constant $library = %?RESOURCES<libraries/example>.Str;
+
+class myparam-build is repr('CStruct') is export {
+    has int32 $.a;
+    has num64 $.b;
+    my sub init(myparam-build) is native($library) { * }
+    submethod BUILD {
+	init(self)
+    }
+}
+
+class myparam-new is repr('CStruct') is export {
+    has int32 $.a;
+    has num64 $.b;
+    my sub init(myparam-new) is native($library) { * }
+    method new() {
+	init(self);
+	self;
+    }
+}
 
 =begin pod
 

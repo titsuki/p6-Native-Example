@@ -5,6 +5,10 @@
 extern "C" {
 #endif
 
+typedef struct {
+  int a;
+  double b;
+} myparam;
 
 #ifdef __cplusplus
 } /* closing brace for extern "C" */
