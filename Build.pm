@@ -4,7 +4,7 @@ class Build {
     method build($workdir) {
 	my $srcdir = "$workdir/src";
 	my %vars = get-vars($workdir);
-	%vars<kdtree> = $*VM.platform-library-name('example'.IO);
+	%vars<example> = $*VM.platform-library-name('example'.IO);
 	mkdir "$workdir/resources" unless "$workdir/resources".IO.e;
 	mkdir "$workdir/resources/libraries" unless "$workdir/resources/libraries".IO.e;
 	process-makefile($srcdir, %vars);
