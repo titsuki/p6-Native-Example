@@ -5,6 +5,11 @@
 extern "C" {
 #endif
 
+struct mystruct {
+  int* x;
+};
+
+void func(const mystruct *a);
 
 #ifdef __cplusplus
 } /* closing brace for extern "C" */
