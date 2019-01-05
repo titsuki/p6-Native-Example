@@ -4,5 +4,5 @@ all: %DESTDIR%/resources/libraries/%example%
 clean:
 	rm %DESTDIR%/resources/libraries/%example%
 
-%DESTDIR%/resources/libraries/%example%: example.c
-	%CC% -shared %CCSHARED% %CCFLAGS% example.c -o %DESTDIR%/resources/libraries/%example%
+%DESTDIR%/resources/libraries/%example%: example.cpp
+	g++ -shared -Wall -Wconversion -O3 -fPIC example.cpp -o %DESTDIR%/resources/libraries/%example%

@@ -2,6 +2,6 @@ use v6;
 use Test;
 use Native::Example;
 
-pass "replace me";
+lives-ok { Native::Example.run };
 
 done-testing;

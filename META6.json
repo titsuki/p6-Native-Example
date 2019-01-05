@@ -7,6 +7,7 @@
   ],
   "depends" : [ ],
   "description" : "blah blah blah",
+  "license" : "NOASSERTION",
   "name" : "Native::Example",
   "perl" : "6.c",
   "provides" : {
@@ -16,6 +17,7 @@
     "libraries/example"
   ],
   "source-url" : "git://github.com/titsuki/p6-Native-Example.git",
+  "tags" : [ ],
   "test-depends" : [ ],
   "version" : "0.04"
 }
