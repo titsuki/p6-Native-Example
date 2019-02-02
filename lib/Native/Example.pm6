@@ -1,6 +1,11 @@
-use v6;
+use v6.c;
+use NativeCall;
+use Native::Example::Model;
+
 unit class Native::Example;
 
+has CArray[Native::Example::Model] $!models;
+submethod BUILD(CArray[Native::Example::Model] :$!models!) { }
 
 =begin pod
 

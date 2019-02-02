@@ -7,15 +7,18 @@
   ],
   "depends" : [ ],
   "description" : "blah blah blah",
+  "license" : "NOASSERTION",
   "name" : "Native::Example",
   "perl" : "6.c",
   "provides" : {
-    "Native::Example" : "lib/Native/Example.pm6"
+    "Native::Example" : "lib/Native/Example.pm6",
+    "Native::Example::Model" : "lib/Native/Example/Model.pm6"
   },
   "resources" : [
     "libraries/example"
   ],
   "source-url" : "git://github.com/titsuki/p6-Native-Example.git",
+  "tags" : [ ],
   "test-depends" : [ ],
   "version" : "0.04"
 }
